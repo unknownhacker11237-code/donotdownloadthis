@@ -1,5 +1,3 @@
-Start-Transcript -Path "C:\Users\Public\debug_log.txt" -Append
-#Requires -RunAsAdministrator
 $ErrorActionPreference = "Stop"
 
 try {
@@ -148,4 +146,3 @@ catch {
     Write-Host "[ERROR] $($_.Exception.Message)" -ForegroundColor Red
     throw
 }
-Stop-Transcript
